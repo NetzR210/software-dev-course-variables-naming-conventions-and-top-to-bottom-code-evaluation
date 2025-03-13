@@ -24,9 +24,17 @@ Things to reflect on:
   
 */
 
-let a = "Alice";
-let b = 5;
-let c = 20;
-let d = a + " bought " + b + " items for $" + c + ".";
+// Descriptive varible names
+let customerName = "Alice";
+let numberOfItems = 5;
+let totalAmountSpent = 20.00;
+
+// New variables for increased clarity
+let productType = "vinyl records";
+let pricePerUnit = totalAmountSpent / numberOfItems;
+
+// Updated purchase summary
+let transactionSummary = customerName + " purchased " + numberOfItems + " " + productType + " at $" + pricePerUnit.toFixed(2) + "spent a total of $" + totalAmountSpent + ".";
+console.log(transactionSummary);
 
 console.log(d);
